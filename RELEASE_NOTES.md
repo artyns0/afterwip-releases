@@ -37,6 +37,6 @@ SHA-256: `5822adacfc89973044e3cea891e7f8f4eb6b4e3725e2e32dcf7e19bbf8252ae5`
 
 Size: `80,275,250` bytes
 
-The signed channel pointer has an expiry of **2026-10-20 13:09:23 UTC**. The downloadable release asset remains available after that date, but update checks need a newly signed, higher-sequence manifest. Never modify the signed payload without an authorized signature.
+The signed beta channel pointer was safely renewed to **sequence 2** on October 15, 2026, with an expiry of **2026-11-14 13:41:07 UTC**. The immutable 0.2.5 package asset has not changed, and sequence renewal does not represent a new application version. After expiry, update checks require another correctly signed, higher-sequence manifest; do not modify the signed payload without authorization.
 
 [All releases](https://github.com/artyns0/afterwip-releases/releases)
