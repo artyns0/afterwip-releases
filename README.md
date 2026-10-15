@@ -25,7 +25,7 @@ Read the [0.2.5 Beta release notes](RELEASE_NOTES.md) for integrity information,
 
 The macOS beta channel pointer is [`channels/beta.json`](channels/beta.json). Its RSA-SHA256 signature binds the version and exact installer URL, size, SHA-256 digest, and Adobe CEP verification evidence. These checks **do not replace Apple's signing and notarization**.
 
-The current manifest is valid until **2026-10-20 13:09:23 UTC**. Once it expires, update checks will require a newly and correctly signed manifest, even if the existing release asset remains downloadable. Never edit the manifest payload without renewing its valid signature.
+The currently published beta manifest has **sequence 2** and is valid until **2026-11-14 13:41:07 UTC** (16:41 Türkiye time). It renews the original 0.2.5 package metadata without publishing a new application version. Once the manifest expires, update checks will require another correctly signed, higher-sequence manifest, even though the existing release asset remains downloadable. Never edit the manifest payload without renewing its valid signature.
 
 The package linked from the beta manifest is the published immutable `v0.2.5-beta` release asset. Do not replace published installers or change their digest.
 
