@@ -11,6 +11,8 @@ This public repository hosts release metadata and installer downloads for **Afte
 
 **This is a beta distribution, not a production-ready or automatically installing updater.**
 
+Read the [0.2.5 Beta release notes](RELEASE_NOTES.md) for integrity information, manual installation steps, and known limitations.
+
 ### macOS beta: important notices
 
 - The macOS `.pkg` is **not Apple Developer ID Installer-signed or notarized**. macOS Gatekeeper may refuse installation. Do not disable or bypass system-wide security protections.
