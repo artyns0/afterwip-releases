@@ -1,39 +1,41 @@
 # AfterWIP Releases
 
-This public repository hosts release metadata and installer downloads for **AfterWIP**, an Adobe After Effects companion that connects to AI assistants via the Model Context Protocol (MCP). The application source repository is private and is **not** distributed here.
+This repository hosts **public beta installers and signed update-channel metadata** for AfterWIP, an Adobe After Effects companion application with Model Context Protocol (MCP) integration. The application source repository remains private and is **not** distributed here.
 
-## Available downloads
+## Current downloads — AfterWIP 0.2.8 Beta
 
-| Platform | Public release | Installation |
+| Platform | Beta release | Installation |
 | --- | --- | --- |
-| macOS (Apple Silicon and Intel) | [AfterWIP 0.2.6 Beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.2.6-beta) | Download and install manually |
-| Windows | No public Windows update release yet | Existing development installers are separate from this public release channel |
+| macOS (Apple Silicon / Intel) | [AfterWIP 0.2.8 Universal Beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.2.8-beta) | Manual PKG installation |
+| Windows x64 (Developer Beta) | [AfterWIP 0.2.8 Windows Developer Beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.2.8-windows-dev-beta) | Manual EXE installation; developer/test use only |
 
-**This is a beta distribution, not a production-ready or automatically installing updater.**
+Read the [0.2.8 Beta release notes](RELEASE_NOTES_0.2.8.md) for exact SHA-256 checksums, file sizes, changes, and important installation limitations. Earlier [0.2.6 Beta notes](RELEASE_NOTES_0.2.6.md) and [0.2.5 Beta notes](RELEASE_NOTES.md) remain available.
 
-Read the [0.2.6 Beta release notes](RELEASE_NOTES_0.2.6.md) for manual installation, integrity information and limitations. Older [0.2.5 Beta notes](RELEASE_NOTES.md) are kept for reference.
+## Important security notice
 
-### macOS beta: important notices
+**These installers are beta builds, not production-signed releases.**
 
-- The macOS `.pkg` is **not Apple Developer ID Installer-signed or notarized**. macOS Gatekeeper may refuse installation. Do not disable or bypass system-wide security protections.
-- The opt-in AfterWIP beta updater can check the signed beta channel, download and verify an eligible package, and **reveal it in Finder**. It does not launch the installer or install in the background.
-- Before manually installing, save projects and quit After Effects, render jobs, and AfterWIP MCP clients.
-- Version 0.2.6 is offered as an update only to eligible installations running an older version; it will not be offered as a same-version reinstall.
-- An owner-reported macOS 0.2.6 manual installation opened successfully; broad device compatibility and automated client-side downloading remain to be validated. Keep backups and use a test Mac for beta evaluation.
+- The macOS PKG is **not Apple Developer ID Installer-signed or notarized**.
+- The Windows Developer Beta EXE is **not Authenticode-signed**. This public prerelease is not a trusted Windows update distribution.
+- Adobe CEP signature validation and RSA-SHA256-signed update manifests bind release metadata and verified CEP evidence, but **do not replace operating-system signing**.
+- Do not disable or bypass SmartScreen, Gatekeeper, or system-wide security protections to install.
+- Save projects, quit After Effects, and stop active render jobs/MCP clients before manual installation.
+- AfterWIP never automatically opens or installs downloaded update packages.
 
-## Update manifest and integrity
+## Signed beta update channels
 
-The macOS beta channel pointer is [`channels/beta.json`](channels/beta.json). Its RSA-SHA256 signature binds the version and exact installer URL, size, SHA-256 digest, and Adobe CEP verification evidence. These checks **do not replace Apple's signing and notarization**.
+| Channel | Version | Sequence | Manifest |
+| --- | --- | --- | --- |
+| macOS beta | 0.2.8 | 4 | [channels/beta.json](channels/beta.json) |
+| Windows Developer Beta (developer-only) | 0.2.8 | 1 | [channels/windows-dev-beta.json](channels/windows-dev-beta.json) |
 
-The currently published beta manifest has **sequence 3** (version **0.2.6**) and is valid until **2026-11-14 18:47:32 UTC** (21:47 Türkiye time). The signed manifest points to the immutable 0.2.6 beta release package. After expiry, update checks will require a newly signed, higher-sequence manifest; the current installer remains separately downloadable.
-
-The package linked from the beta manifest is the published immutable `v0.2.6-beta` release asset. Older `v0.2.5-beta` files remain available as historical releases. Do not replace published installers or change their digest.
+Both current manifests expire **2026-10-23 08:54:13 UTC** (11:54 Türkiye time). Renew them with an authorized RSA-signed higher-sequence manifest before expiration if continuing update availability. Expiration does not remove previously released installer files. Updater eligibility, beta opt-in, and client version policies still apply. A client already running 0.2.8 will not be offered the same version as a new update.
 
 ## Release policy
 
-- Public repository: distribution metadata and approved installer assets only.
-- No private source files, code-signing private keys, credentials, personal data, or internal build logs.
-- Windows unattended/automatic updates are **disabled**. No Windows update channel is published yet.
-- Future releases must be reviewed, signed as appropriate, and published with version-specific notes and integrity information.
+- Public repo holds approved installer downloads, notes, and signed channel metadata only; no private source, credentials, RSA or Adobe private keys.
+- The Windows Developer Beta channel is distinct from the **disabled** trusted Windows production update channel.
+- No automatic installation or production update gates are enabled.
+- New packages are immutable, versioned, and published with their real SHA-256 digests.
 
-For current downloads, use the [Releases page](https://github.com/artyns0/afterwip-releases/releases).
+[Browse all releases](https://github.com/artyns0/afterwip-releases/releases)
