@@ -4,34 +4,35 @@
 
 Public beta installers and signed manual update metadata for the AfterWIP Adobe After Effects MCP companion.
 
-## Current downloads — AfterWIP 0.2.9 Beta
+## Current downloads — AfterWIP 0.3.0 Smart Connection Beta
 
 | Platform | Installer | Release |
 | --- | --- | --- |
-| macOS Universal (Apple Silicon / Intel) | [Download PKG](https://github.com/artyns0/afterwip-releases/releases/download/v0.2.9-beta/AfterWIP-0.2.9-6a9d2bf7228de1a87c1e7aa65f4ecbb59a686035f3fc415ba1680322ffc5cd26-macOS-universal.pkg) | [macOS beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.2.9-beta) |
-| Windows x64 Developer Beta | [Download EXE](https://github.com/artyns0/afterwip-releases/releases/download/v0.2.9-windows-dev-beta/AfterWIP-0.2.9-0447ed74eee19efaf57d6cbed0aa9fa6d38ad1122ccac172488f744a133de971-win-x64.exe) | [Windows developer beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.2.9-windows-dev-beta) |
+| Windows x64 Developer Beta | [Download EXE](https://github.com/artyns0/afterwip-releases/releases/download/v0.3.0-windows-dev-beta/AfterWIP-0.3.0-b9d42125c38c01dddfc90e1801637c2fda8d562e8befa5ecca48160851c3d481-win-x64.exe) | [Windows developer beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.3.0-windows-dev-beta) |
+| macOS Universal (Apple Silicon / Intel) | [Download PKG](https://github.com/artyns0/afterwip-releases/releases/download/v0.3.0-beta/AfterWIP-0.3.0-a847964c7eb287c0476391439c5e2d2f0d73444ead4dca3d3ea55a6fb51238c3-macOS-universal.pkg) | [macOS beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.3.0-beta) |
 
-The new approved transparent raster logo adapts to compact and wide panels; Windows Setup uses the new icon. ChatGPT, Claude and After Effects marks, Settings, Updates and Activity Log are retained. See [0.2.9 release notes](RELEASE_NOTES_0.2.9.md) for SHA-256 values, test results and limitations, or [checksums](SHA256SUMS_0.2.9.txt).
+A simpler connection card shows authenticated, unexpired AI sessions with local provider icons and bounded bridge recovery. Client names remain self-reported labels; tool calls/writes are never replayed. The approved AfterWIP logo, Safe Mode, Settings, Updates and Activity Log remain. See [0.3.0 release notes](RELEASE_NOTES_0.3.0.md) for test results and limits, or [SHA-256 checksums](SHA256SUMS_0.3.0.txt).
 
 ## Manual beta installation
 
 - Windows EXE is an **Authenticode-unsigned Developer TEST BUILD**. macOS PKG has **no Apple Developer ID signature or notarization**.
 - Adobe CEP signatures and RSA-signed metadata are separately verified and do not replace OS publisher signing. Retain SmartScreen, Gatekeeper and system protections.
-- Save projects and quit After Effects, render jobs and active MCP clients before manual installation. Installers are never launched automatically by the updater.
-- Live After Effects loading and actual installation/upgrade were NOT RUN for this release.
+- Use the eligible beta channel in AfterWIP Updates to check/download, then install manually. Installers are never launched automatically.
+- Save projects and quit After Effects, render jobs and active MCP clients before installation.
+- Live After Effects loading, native CEP close/reopen and actual installation/upgrade were **NOT RUN** for this release.
 
 ## Signed beta update channels
 
 | Channel | Version | Sequence | Manifest |
 | --- | --- | ---: | --- |
-| macOS beta | 0.2.9 | 5 | [beta.json](channels/beta.json) |
-| Windows Developer Beta | 0.2.9 | 2 | [windows-dev-beta.json](channels/windows-dev-beta.json) |
+| macOS beta | 0.3.0 | 6 | [beta.json](channels/beta.json) |
+| Windows Developer Beta | 0.3.0 | 3 | [windows-dev-beta.json](channels/windows-dev-beta.json) |
 
-Both manifests expire **2026-11-16 20:21:48 UTC** (2026-11-16 23:21:48 Türkiye time). Renewal requires a new RSA signature and higher sequence; expiry does not remove released installer files. The maximum existing 31-day policy is unchanged. Beta opt-in, installed version and build/channel eligibility apply. The trusted Windows production channel and all three production gates remain disabled.
+Both manifests expire **2026-11-17 22:58:35 UTC** (2026-11-18 01:58:35 Türkiye time). Renewal requires a new RSA signature and higher sequence; expiry does not remove released installer files. The maximum existing 31-day policy is unchanged. Beta opt-in, installed version and build/channel eligibility apply. The trusted Windows production channel and all three production gates remain disabled.
 
 ## Previous releases
 
-[0.2.8 notes](RELEASE_NOTES_0.2.8.md) · [0.2.6 notes](RELEASE_NOTES_0.2.6.md) · [0.2.5 notes](RELEASE_NOTES.md) · [All releases](https://github.com/artyns0/afterwip-releases/releases)
+[0.2.9 notes](RELEASE_NOTES_0.2.9.md) · [0.2.8 notes](RELEASE_NOTES_0.2.8.md) · [0.2.6 notes](RELEASE_NOTES_0.2.6.md) · [0.2.5 notes](RELEASE_NOTES.md) · [All releases](https://github.com/artyns0/afterwip-releases/releases)
 
 ## Distribution policy
 
