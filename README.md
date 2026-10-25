@@ -1,31 +1,36 @@
-# AfterWIP by VisionWIP
+# AfterWIP — by Artyns
 
 <img src="assets/afterwip-horizontal-1200.png" alt="AfterWIP" width="360">
 
-## Current downloads — AfterWIP 0.3.3 Beta
+## Download AfterWIP 1.0.0
 
-| Platform | Installer | Release |
-| --- | --- | --- |
-| Windows x64 Developer Beta | [Download EXE](https://github.com/artyns0/afterwip-releases/releases/download/v0.3.3-windows-dev-beta/AfterWIP-0.3.3-38a16a43c77fe611eac4ee39c4c0a126be3649443a0fa39ee4a62501048d6497-win-x64.exe) | [Windows beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.3.3-windows-dev-beta) |
-| macOS Universal | [Download PKG](https://github.com/artyns0/afterwip-releases/releases/download/v0.3.3-beta/AfterWIP-0.3.3-e3623ed067f9bc50a0afed1f4cb9a4af6776f967ae6269281497b2b12bd3d447-macOS-universal.pkg) | [Mac beta](https://github.com/artyns0/afterwip-releases/releases/tag/v0.3.3-beta) |
+| Platform | Installer |
+| --- | --- |
+| Windows 10/11 x64 | [Download for Windows](https://github.com/artyns0/afterwip-releases/releases/download/v1.0.0-windows-dev-beta/AfterWIP-1.0.0-7638d4536e17d16795d8ca3d8bbcd6381aeb31f16e8cbd0dfaa448b6d286b626-win-x64.exe) |
+| macOS 13.5+ (Apple silicon and Intel) | [Download for macOS](https://github.com/artyns0/afterwip-releases/releases/download/v1.0.0-beta/AfterWIP-1.0.0-b6c04571927677596d8b41ad728ee81903ff34c189d7c11a08220a57727acf6f-macOS-universal.pkg) |
 
-Fixes Windows update-cache ancestor validation and recognizes the exact Codex MCP name without inventing identity. Existing client SVGs, technical sessions, Safe Mode and update checks remain. See [release notes](RELEASE_NOTES_0.3.3.md) and [checksums](SHA256SUMS_0.3.3.txt).
+See [what's new](RELEASE_NOTES_1.0.0.md) and [checksums](SHA256SUMS_1.0.0.txt).
 
-## Manual beta installation
+Windows may show a SmartScreen prompt for a new installer (**More info → Run
+anyway**). If macOS blocks the package, open **System Settings → Privacy &
+Security → Open Anyway**. Installers never run automatically from the
+AfterWIP panel; updates are signature-verified before they are offered.
 
-Windows EXE is **Authenticode unsigned Developer Beta**. macOS PKG is **Apple Developer ID unsigned / unnotarized beta**. Adobe CEP/RSA verification does not replace OS signing. Keep UAC, SmartScreen and Gatekeeper enabled. Use Updates to check/download, save work, quit After Effects/MCP and install manually. No installer runs automatically. Live Adobe loading/install and Intel execution NOT RUN.
+## Update channels
 
-## Signed channels
+The AfterWIP panel reads these RSA-signed manifests (key `beta-2026-01`):
 
-| Channel | Version | Sequence | Manifest |
+| Platform | Version | Sequence | Manifest |
 | --- | --- | ---: | --- |
-| macOS beta | 0.3.3 | 9 | [beta.json](channels/beta.json) |
-| Windows Developer Beta | 0.3.3 | 6 | [windows-dev-beta.json](channels/windows-dev-beta.json) |
+| macOS | 1.0.0 | 31 | [beta.json](channels/beta.json) |
+| Windows | 1.0.0 | 31 | [windows-dev-beta.json](channels/windows-dev-beta.json) |
 
-RSA key ID `beta-2026-01`; expires **2026-11-17T13:11:10.846Z**. Strict expiry, rollback, package hash, Adobe pins and closed production gates remain.
+Channel file names are technical identifiers kept for compatibility.
 
 ## Previous releases
 
-[0.3.2 notes](RELEASE_NOTES_0.3.2.md) · [All releases](https://github.com/artyns0/afterwip-releases/releases)
+[0.3.3 notes](RELEASE_NOTES_0.3.3.md) · [All releases](https://github.com/artyns0/afterwip-releases/releases)
 
-This public repository contains approved installers, public metadata/checksums and brand assets. Private Git history and signing keys stay private; source archives contain public metadata only. Original MIT notices remain in the application.
+This repository contains installers, checksums, release notes and brand assets
+only. AfterWIP is licensed under the AfterWIP End User License Agreement; the
+open-source notices are installed with the application.
