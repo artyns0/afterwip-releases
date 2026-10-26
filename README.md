@@ -2,14 +2,14 @@
 
 <img src="assets/afterwip-horizontal-1200.png" alt="AfterWIP" width="360">
 
-## Download AfterWIP 1.0.1
+## Download AfterWIP 1.0.2
 
 | Platform | Installer |
 | --- | --- |
-| Windows 10/11 x64 | [Download for Windows](https://github.com/artyns0/afterwip-releases/releases/download/v1.0.1-windows-dev-beta/AfterWIP-1.0.1-2141787731fc74f46f9beb88ff061777d05ba18e523325eb9d2a9c6880532185-win-x64.exe) |
-| macOS 13.5+ (Apple silicon and Intel) | [Download for macOS](https://github.com/artyns0/afterwip-releases/releases/download/v1.0.1-beta/AfterWIP-1.0.1-6d5e5e8d2ac9a075d8f6c79843c0b0c1b4877efe1b8e2a4937b8d2a848b3c3cb-macOS-universal.pkg) |
+| Windows 10/11 x64 | [Download for Windows](https://github.com/artyns0/afterwip-releases/releases/download/v1.0.2-windows-dev-beta/AfterWIP-1.0.2-a246fa00ac5b62152d3d4d6f3c9636cdf534cad4c143c5baf259d064ff2b8a0b-win-x64.exe) |
+| macOS 13.5+ (Apple silicon and Intel) | [Download for macOS](https://github.com/artyns0/afterwip-releases/releases/download/v1.0.2-beta/AfterWIP-1.0.2-0efebfa3990c16b8bc8f1d0e01857f43812e07ca5f463ea6adaefc1c6ac86af1-macOS-universal.pkg) |
 
-See [what's new in 1.0.1](RELEASE_NOTES_1.0.1.md), [1.0.0 notes](RELEASE_NOTES_1.0.0.md) and [checksums](SHA256SUMS_1.0.1.txt).
+See [what's new in 1.0.2](RELEASE_NOTES_1.0.2.md), [1.0.0 notes](RELEASE_NOTES_1.0.0.md) and [checksums](SHA256SUMS_1.0.2.txt).
 
 Windows may show a SmartScreen prompt for a new installer (**More info → Run
 anyway**). If macOS blocks the package, open **System Settings → Privacy &
@@ -22,10 +22,12 @@ The AfterWIP panel reads these RSA-signed manifests (key `beta-2026-01`):
 
 | Platform | Version | Sequence | Manifest |
 | --- | --- | ---: | --- |
-| macOS | 1.0.1 | 32 | [beta.json](channels/beta.json) |
-| Windows | 1.0.1 | 32 | [windows-dev-beta.json](channels/windows-dev-beta.json) |
+| macOS | 1.0.2 | 33 | [beta.json](channels/beta.json) |
+| Windows | 1.0.2 | 33 | [windows-dev-beta.json](channels/windows-dev-beta.json) |
 
 Channel file names are technical identifiers kept for compatibility.
+
+Real installer/Adobe/Google lifecycle acceptance tests for 1.0.2 were not completed; publication proceeded at the owner's request. See the release notes for the validation scope. Previous 1.0.1 packages remain available.
 
 ## Previous releases
 
